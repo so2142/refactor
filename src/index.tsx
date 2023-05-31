@@ -1,19 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import Game from './components/Game'
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDOM.render(<Game />, document.getElementById('root'));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+// 下記参照
+// リファクタリングについて
+// https://www.membersedge.co.jp/blog/refactor-react-official-tutorial/
+// https://qiita.com/AtomuIshida/items/1d7df86a8f71ee7b59c5
+
+// React.FCとは
+// https://interrupt.co.jp/blog/entry/2021/03/05/133925
